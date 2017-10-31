@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/loadBtn"
+                style="@style/FloatingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="#fd5d71"
+                app:srcCompat="@drawable/ic_load" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/androidBtn"
+                style="@style/FloatingBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:backgroundTint="#fd5d71"
+                app:srcCompat="@drawable/ic_android" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/cppBtn"
+                style="@style/FloatingBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:backgroundTint="#fd5d71"
+                app:srcCompat="@drawable/ic_cpp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/filename"
+                style="@style/StatisticTextDefault"
+                android:ellipsize="start"
+                android:fontFamily="casual"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/androidStatistic"
+                style="@style/StatisticTextDefault"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="casual"
+                android:text="TextView"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/CppStatistic"
+                style="@style/StatisticTextDefault"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="casual"
+                android:text="TextView"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/soundBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            app:backgroundTint="@android:color/darker_gray"
+            app:elevation="0dp"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_pause_big" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0" />
+
+</LinearLayout>
+
+
